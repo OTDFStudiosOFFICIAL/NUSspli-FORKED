@@ -150,6 +150,7 @@ static void innerMain()
                                                         initFSSpace();
                                                         checkStacks("main");
                                                         mainMenu(); // main loop
+                                                        drawByeFrame();
                                                         checkStacks("main");
                                                         debugPrintf("Deinitializing libraries...");
                                                     }

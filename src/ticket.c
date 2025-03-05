@@ -501,6 +501,11 @@ void deleteTicket(uint64_t tid)
                     clearList(ticketList, true);
                     MEMFreeToDefaultHeap(file);
                 }
+                else if(fileSize == 0)
+                {
+                    debugPrintf("Removing %s", path);
+                    FSARemove(getFSAClient(), path);
+                }
             }
 
             FSACloseDir(getFSAClient(), dir2);

@@ -117,7 +117,6 @@ uint32_t homeButtonCallback(void *dummy)
     {
         shutdownEnabled = false;
         app = APP_STATE_HOME;
-        drawByeFrame();
     }
 
     return 0;
